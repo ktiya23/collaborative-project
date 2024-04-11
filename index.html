@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 15px;
+        }
+
+        body{
+            border: 2px solid black;
+        }
+
+        select {
+            border-style: none;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            margin-left: 10px;
+            margin-top: 30px;
+        }
+
+        .top {
+            display: flex;
+            border: 4px solid black;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+
+        h5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top>div:nth-child(2) {
+            display: flex;
+            margin-left: 950px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .nav>input{
+            font-size: 30px;
+        }
+
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        a:hover {
+            color: rgb(161, 107, 5);
+        }
+
+        .box {
+            display: flex;
+        }
+
+        .box>div {
+            width: 500px;
+        }
+
+        .box>div>span {
+            border: 1px solid black;
+            background: linear-gradient(90deg, rgb(9, 170, 9), rgb(29, 206, 242));
+            color: white;
+            position: absolute;
+            font-size: 25px;
+            top: 320px;
+        }
+
+        .box>div>div {
+            display: flex;
+        }
+
+        .box.div>img:nth-child(1) {
+            position: relative;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div>
+            <select>
+                <option value="">MORE BRANDS</option>
+            </select>
+        </div>
+        <div>
+            <img src="data:image/jpeg;base64,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"
+                height="50px">
+            <h5>STORIES</h5>
+            <img src="https://th.bing.com/th/id/OIP.S5p4ZrbmaZDeGVOWjlXVQgHaIt?w=153&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                height="30px">
+            <h5>CONTACT US</h5>
+            <img src="https://th.bing.com/th/id/OIP.W5gB890ePzeGvsVt4U4V8QHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                height="30px">
+            <h5>LOG IN</h5>
+        </div>
+    </div>
+    <div class="nav">
+        <img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/header_brand_logo_RBK.png?q=75&auto=format"
+            height="30px">
+        <div>
+            <a href="">NEW</a>
+            <a href="">ICONS</a>
+            <a href="">MEN</a>
+            <a href="">WOMEN</a>
+            <a href="">SPORTS</a>
+            <a href="">CLASSIC</a>
+            <a href="">SALE</a>
+        </div>
+        <input type="text" name="" id="" placeholder="Search">
+        <img src="https://th.bing.com/th/id/OIP.SIGZygZcedagzvZtn4UGAwHaHa?w=176&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            height="50px">
+    </div>
+    <div class="box">
+        <div>
+            <span>I AM THE NEW</span>
+            <img src="https://imagescdn.reebok.in/img/app/product/3/39630532-13058712.jpg?q=75&auto=format&w=387"
+                height="450px">
+            <p>CLASSIC SHOES</p>
+            <p>REEBOK WOMEN CLUB C 85 W</p>
+            <div>
+                <img src="data:image/jpeg;base64,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"
+                    height="15px">
+                <h3>6,999</h3>
+            </div>
+        </div>
+        <div>
+            <span>I AM THE NEW</span>
+            <img src="https://imagescdn.reebok.in/img/app/product/3/39630532-13058712.jpg?q=75&auto=format&w=387"
+                height="450px">
+            <p>CLASSIC SHOES</p>
+            <p>REEBOK WOMEN CLUB C 85 W</p>
+            <div>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCACEAFoDASIAAhEBAxEB/8QAHAABAAIDAQEBAAAAAAAAAAAAAAcIBAUGAwEC/8QARBAAAQMCAwQGBQcJCQAAAAAAAQIDBAAFBhESByExQRdCUVVh0xMUcYGUFSJSkZKk0iMyMzRUYqHB0RYkJVZzoqOys//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDpNouJm7JZ3YTKgbjdW3Y7STkr0UdQ0OuqSfA6U+J/dNV/qXbxs4xlfZzlwuN5tjkhaG2/mokJQlDadIShOjIDifaSeda/oexB3rbPsyPwUEZUqSV7IMTgfMuVoUexa5SR9YZNa6VsuxxHBU2xDl5cospAJHgJAboOHpWdcLTeLU4GrlBlRFnPSJDS0BeXNCiNJ9xNYNApSt7hrD68SzXIDM6LFlFousolBzJ4J3rS2UA7wN+XZn2UGipUm9D2IO9bZ9mR+CnQ9iDvW2fZkfgoOMwzYZWI7vEtzOpLaj6WW8BmGIyCNa/byT4kVOnR/gz9ie+KkfjpgvCbOFoDzS1tvz5LmuXIbSQClJIbbRq36QN/tJ93VUClc1jHErWGbQ9KSUmdI1R7c2cjqeI3uKH0UcT7h1qhfpE2gd9OfCwfJoLG0quXSJtA76c+Fg+TTpE2gd9OfCwfJoLCS4cKfHdizI7MiO4MltPoStB8clc+w1BWPcE/2cdbnW/Wu0SXCgBZKlxHjmoNKUd5Sd+k+GR3714HSJtA76c+Fg+TWNcMaYwusR+BcLmX4j+kOtLjQwFaVBY3oaChkQDuNBztZUCbJt02HPjL0SIj7b7SuWpBzyI7DwNYtKC10CYzcIMCez+imxWJTYPEJdQHAD4jPfWVVaoWOMaW+LHhQ7s41FjoDTDfoIi9CBwGpxsq/jWR0ibQO+nPhYPk0FjaVANpxftNvVxhWyHeHFPynQgExYWlCRvU4vJngkZk+ypc+Q8R/wCb7n8FbPJoI1xRh3ahii4ibJsYabbaQzGjon29SGUgZqyJf4qOZJ9g5VoejfaH3N9+tvn1YqlBXXo32h9zffrb59OjfaH3N9+tvn1YqlBXXo32h9zffrb59OjfaH3N9+tvn1YqtViC6N2ay3a5OKCTGiuKaz6z6hoaQPaogUFXSCkqSeKSQee8buVfKV+20OOrbbbSpbji0oQlIzUpSjkAB2mg6C24Kxldoce4W+2F6JI9J6F0yobWvQtTavmvOpVxBHCsvo32h9zffrb59TvYbcLRZrPbd2qHDZadI4F7TqcUPaok1s6Dgtn2DnsPRnp1yZCbvLzaKAttz1WMk7kBbZKc1EalZE8hyOfe0pQKVocRYqs+GEQl3JMkiYp5DPqzaXDm0ElWrUpPaK57pZwV9C6/DN+bQd/So7c2uYQSDoi3hw8gGIyR7yp/+VaWfticKVJtdmSlXVdnvlY97LIH/pQSzIkRorLsiS82ywykrddeWlDaEjmpSt1QPj3GgxFIRAgFSbPEWVpUoFKpbwBT6VSTvCRvCB45njknnr3ifEV/WFXKatxpKtTcdvJuM2e1LSN2ficz41paBUk7MsKrnTkYgmtEQYDmcILBykS08Fpz6rfHPty+icsfCGzq4XdbE67odh2oFK0tqSUyZg45JSd6UH6R93HNM4xo0aGwxFitIZjsNpaZabAShCEjIAAUHtSlKBSlKCKNsn6thj/XuH/VmoeqymL8MxsT2tcVRDcyOVPW9/fk29lkUry6quCvcerVcpcSVBkyIkppTUiO4pt5tYyUlaTkR/Sg8K6WLgXHEwIUzZ5AQsJUlbzjDKSk7woF1Y3VzVS3s0xnp9Bhq6O7idFpfcPA/sqif+P7PYKDXW7ZFiB8pVcp8KG2eKWdcl4eGQ0o/wB5qQrFgLCljLbzcYy5iMlCVO0urSoc20ZBseBCc/GuspQKUpQKUpQKUpQKjzaHg35ajKu9taBusRv8s2gfOmx0DPTkOK09XtG7sykOlBUfhX6SpSSlSSQpJCklJIII3ggipP2lYN9VcexDa2v7q8vVc2WxuYeWf06QOqo/ndhOfBXzYuoJ92f4xF/h+oT3B8sQmxqKiAZjCdweH7w4L+vnknu6qlAmzbZMiT4TqmpUZxLrS08iOIIz3g8COYPjVjMK4lhYntjcxnJuS3panxtWamHsuWe/Srik/wAwcg6GlKUClKUClKUClKUHm6yy+06y82hxp1Cm3W3AFIWhY0qSoHdkedV7xxhF3DNw9JHStVpmLUqG4cz6JX5xjuE8x1e0eIOViK112tUC9QJltnN62JCSM92ttY3pcbJ4KSd4/ociFWK3eG8QT8N3JmfFJU2cm5ccnJEhgnMoPjzSeR+o+eILFPw9c5FumJzKDrjvAEIkMKJ0uo9vMciCOVaigtVbLlBu8KJcYLocjSUBaD1kngpCxyUDuI8Kzqr3gPF7mHJ3q0ta1WeYtPrKd59XdOSRIQP4LHMdpSBVgG3G3UNutrSttxKVtrQQpK0KGYUkjdkeVB6UpSgUpSgUpSgUpSg5rF+F4uJ7Ypg6G58fW5b5BH5jhG9tZG/QrcD7jyyNc5cWTBkyIkppbUiO4pp5tYyUhaTkR/SrY1He0TBvyzGVeba1ndYjf5dtCfnTY6BwAHFaer2jdv3ZBBdSrs1xl6BbOHLo9+RcUE2p9w/o3FH9WUTyPU7Du5jTFVASCCCQQcwRxBoLcUqP9nuMvlyKLXcXf8WhtDQtZ3zY6d3pMz109ft49umQKBSlKBSlKBSlKBSlKCum0SJEh4rurUVpDTbiY8hSEDJJdeaS4tWXiSTXJUpQZcGVKgzIcuI6tmQwsOtOIORSpBP8Dzq1iSSlBPEgE/VSlB9pSlB//9k="
+                    height="15px">
+                <h3>6,999</h3>
+            </div>
+        </div>
+        <div>
+            <span>I AM THE NEW</span>
+            <img src="https://imagescdn.reebok.in/img/app/product/3/39630532-13058712.jpg?q=75&auto=format&w=387"
+                height="450px">
+            <p>CLASSIC SHOES</p>
+            <p>REEBOK WOMEN CLUB C 85 W</p>
+            <div>
+                <img src="data:image/jpeg;base64,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"
+                    height="15px">
+                <h3>6,999</h3>
+            </div>
+        </div>
+        <div>
+            <span>I AM THE NEW</span>
+            <img src="https://imagescdn.reebok.in/img/app/product/3/39630532-13058712.jpg?q=75&auto=format&w=387"
+                height="450px">
+            <p>CLASSIC SHOES</p>
+            <p>REEBOK WOMEN CLUB C 85 W</p>
+            <div>
+                <img src="data:image/jpeg;base64,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"
+                    height="15px">
+                <h3>6,999</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
